@@ -1,0 +1,9 @@
+Project ->
+Predicting Stock price on real time data
+1. Use API to extract stock data(open,high,low,close,volume)
+2. Update the dataset
+3. Create a regression model that train itself again and again after every 24 hrs
+   (Multiple Linear Regression and Decision Tree Regression)
+4. Create a classification model to predict Buy/Sell/Hold (Logistic Classification)
+5. use web socket to show the graph
+6. Show all other data in the GUI   

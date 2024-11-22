@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/GoogleCSS.css">
+    <title>Google</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="list1">
+                <br><img src="/Images/apple.png"><a href="/apple">Apple</a><br><br><hr>
+            </div>
+            <div class="list1">
+                <br><img src="/Images/amazon.png"><a href="/amazon">Amazon</a><br><br><hr>
+            </div>
+            <div class="list1">
+                <br><img src="/Images/google.png"><a href="/google">Google</a><br><br><hr>
+            </div>
+            <div class="list1">
+                <br><img src="/Images/intel.png"><a href="/intel">Intel Corp</a><br><br><hr>
+            </div>
+            <div class="list1">
+                <br><img src="/Images/meta.png"><a href="/meta">Meta</a><br><br><hr>
+            </div>
+            <div class="list1">
+                <br><img src="/Images/netflix.png"><a href="/netflix">Netflix</a><br><br><hr>
+            </div>
+            <div class="list1">
+                <br><img src="/Images/nvdia.png"><a href="/nvdia">NVDIA</a><br><br><hr>
+            </div>
+            <div class="list1">
+                <br><img src="/Images/palantir.png"><a href="/palantir">Palantir</a><br><br><hr>
+            </div>
+            <div class="list1">
+                <br><img src="/Images/tesla.png"><a href="/tesla">Tesla</a><br><br>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <h1>Google<img src="/Images/google.png" id="img1"></h1>
+                <p id="p1">(GOOG)</p><br>
+                <p id="p2">Open: <%=latestOpen%>   High: <%=latestHigh%>   Low: <%=latestLow%>   Close: <%=latestClose%>   Volume: <%=latestVolume%></p>
+            </div><br><br><br>
+            <div class="middle">
+                <form action="/google_data" method="POST">
+                    <label for="open">Open Price:</label>
+                    <input type="text" id="open" name="open" required>
+                
+                    <label for="high">High Price:</label>
+                    <input type="text" id="high" name="high" required><br><br>
+                
+                    <label for="low">Low Price:</label>
+                    <input type="text" id="low" name="low" required>
+                
+                    <label for="volume">Volume:</label>
+                    <input type="text" id="volume" name="volume" required><br><br><br>
+                
+                    <button type="submit" id="btn1">Submit</button>
+                  </form>
+            </div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</body>
+</html>
